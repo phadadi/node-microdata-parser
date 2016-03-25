@@ -1,4 +1,4 @@
-var request = require('request');
+//var request = require('request');
 var htmlparser = require("htmlparser2");
 
 function parse(data, cb) {  
@@ -74,7 +74,7 @@ function parse(data, cb) {
   parser.done();
 }
 
-function parseUrl(url, cb) {
+/*function parseUrl(url, cb) {
   cb = cb || function() {};
 
   request(url, function(err, res, body) {
@@ -84,7 +84,7 @@ function parseUrl(url, cb) {
 
     parse(body, cb);
   });
-}
+}*/
 
 exports.parse = parse;
-exports.parseUrl = parseUrl;
+//exports.parseUrl = parseUrl;
